@@ -1,0 +1,65 @@
+section#office {
+  
+}
+section#office div.wrap {
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+}
+section#office div.wrap h2.hide {
+  
+}
+section#office div.wrap ul {
+  
+}
+section#office div.wrap ul li {
+  width: 50%;
+}
+section#office div.wrap ul li a {
+  text-align: center;
+  color: white;
+  background-size: 100%;
+  background-position: bottom;
+  line-height: 2;
+  height: 185px;
+  transition: all 1s cubic-bezier(.67,0,1,1);
+  background-repeat: no-repeat;
+}
+section#office div.wrap ul li a:hover{
+  background-size: 110%;
+}
+section#office div.wrap ul li:nth-child(1) a{
+  background-image: url(../img/office1.jpg);
+}
+section#office div.wrap ul li:nth-child(2) a{
+  background-image: url(../img/office2.jpg);
+}
+section#office div.wrap ul li a hgroup {
+  
+}
+section#office div.wrap ul li a hgroup h3 {
+  
+}
+section#office div.wrap ul li a hgroup h4 {
+  
+}
+section#office div.wrap ul li a span.arrow {
+  
+  border-bottom: 1px solid;
+  width: 21px;
+  font-size: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#office div.wrap ul li a span.arrow::after{
+  content: "";
+  border: 1px solid;
+  width: 9px;
+  height: 9px;
+  display: block;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: translateY(6px) translateX(4px) rotate(45deg);
+}

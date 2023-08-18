@@ -1,0 +1,100 @@
+#title{ 
+  background-image: url(../img/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 490px;
+  height: calc( 100% + 66px );
+}
+#title .wrap{
+  color: white;
+  position: relative;
+}
+#title .wrap hgroup{
+  
+}
+#title .wrap hgroup .h4{
+  
+}
+#title .wrap hgroup .h1{
+  
+}
+#title .wrap .scroll{
+  color: white;
+  position: absolute;
+  bottom: 100px;
+  width: 80px;
+  height: 80px;
+  font-size: 0;
+}
+#title .wrap .scroll:after{
+  content: "";
+  background-image: url(../img/scroll.svg);
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-name:updown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; 
+}
+@keyframes updown{
+  0%{ /* 시작 */
+    transform: translateY(10px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  100%{ /* 끝 */
+    transform: translateY(-10px);
+  }
+}
+#title .wrap .scroll span{
+  width: 2px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  background-color: white;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+#title .wrap .scroll span:nth-child(1){
+  left: 0;
+  top: 0;
+  animation-name: one;
+  width: 0;
+}
+@keyframes one{
+  100%{ /* 시작 */
+    width: 100%;
+  }
+}
+#title .wrap .scroll span:nth-child(2){
+  right: 0;
+  top: 0;
+  animation-name: two;
+  animation-delay: 0.5s;
+  height: 0;
+}
+@keyframes two{
+  100%{ /* 시작 */
+    height: 100%;
+  }
+}
+#title .wrap .scroll span:nth-child(3){
+  right: 0;
+  bottom: 0;
+  animation-name: one;
+  animation-delay: 1s;
+  width: 0;
+}
+#title .wrap .scroll span:nth-child(4){
+  left: 0;
+  bottom: 0;
+  animation-name: two;
+  animation-delay: 1.5s;
+  height: 0;
+}
+
+

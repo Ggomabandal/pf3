@@ -1,0 +1,94 @@
+section#recco {
+  margin-top: -160px;
+}
+section#recco div.wrap {
+  max-width: 1200px;
+}
+section#recco div.wrap article {
+  width: calc(100% / 2);
+}
+section#recco div.wrap article.recruit {
+  
+  position: relative;
+}
+section#recco div.wrap article.recruit::before{
+  content: "";
+  background-image: url(../img/people.png);
+  width: 320px;
+  height: 769px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+section#recco div.wrap article.recruit::after{
+  content: "";
+  width: 100%;
+  height: calc( 682.8px - 381px );
+  display: block;
+  background-color: rgba(255,255,255,0.5);
+  position: absolute;
+  bottom: 0;
+}
+section#recco div.wrap article.recruit hgroup {
+  
+}
+section#recco div.wrap article.recruit hgroup h2.h2 {
+  background-color: #E7E7E5;
+  padding: 175px 0 175px 100px;
+  box-sizing: border-box;
+  color: white;
+  font-weight: 300;
+}
+section#recco div.wrap article.recruit hgroup h3.h4 {
+  margin: 80px 0 20px 100px;
+  position: relative;
+  z-index: 1;
+}
+section#recco div.wrap article.recruit>*:not(hgroup){
+  margin-left: 100px;
+}
+section#recco div.wrap article.recruit p.p {
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+section#recco div.wrap article.recruit a.moreCir {
+  margin-bottom: 80px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+section#recco div.wrap article.corpo {
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  background-image: url(../img/social.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+section#recco div.wrap article.corpo::after{
+  content: "";
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  border: 2px solid;
+  border-color: #9CB875;
+  box-sizing: border-box;
+  position: absolute;
+}
+section#recco div.wrap article.corpo hgroup {
+  gap: 20px;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+section#recco div.wrap article.corpo hgroup h2.h3 {
+  line-height: 1.2;
+}
+section#recco div.wrap article.corpo hgroup h3.h5 {
+}
+section#recco div.wrap article.corpo hgroup h3.h5 span.block {
+}
+section#recco div.wrap article.corpo a.moreCir {
+  color: white;
+  z-index: 1;
+}

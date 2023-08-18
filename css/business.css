@@ -1,0 +1,143 @@
+main{
+  
+}
+main section#business{  
+
+}
+main section#business .wrap{ 
+  padding-top: 150px;
+}
+main section#business .wrap h2.h3{   
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main section#business .wrap article{  
+  padding: 200px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main section#business .wrap article:nth-of-type(1){  
+  position: relative;
+  padding-top: 50px;
+}
+main section#business .wrap article:nth-of-type(2){  
+  padding-left: calc( 50% );
+  position: relative;
+  box-sizing: border-box;
+  color: white;
+}
+main section#business .wrap article:nth-of-type(3){
+  
+  background-image: url(../img/busi4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  padding-left: calc( ( 100% - 1200px ) / 2);
+  box-sizing: border-box;
+}
+main section#business .wrap article:nth-of-type(2) a{
+  color: white;
+}
+main section#business .wrap article:nth-of-type(3) a{
+  color: white;
+}
+main section#business .wrap article h3.h4{
+  
+  position: relative;
+  z-index: 1;
+}
+main section#business .wrap article h3.h4 span.h2{  
+  margin: 20px 0;
+}
+main section#business .wrap article p.p{
+  
+  margin-bottom: 20px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+main section#business .wrap article a.more{  
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+main section#business .wrap article:nth-of-type(1) a.more:hover{
+  color: white;
+}
+main section#business .wrap article a.more::after{
+  content: "";  
+  width: 0;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  left: 0;
+  transition: all 0.5s;
+  transform: skewX(-20deg);
+  transform-origin: 0 0;
+  z-index: -1;
+}
+main section#business .wrap article:nth-of-type(2) a.more::after,main section#business .wrap article:nth-of-type(3) a.more::after{
+  content: "";  
+  width: 0;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  left: 0;
+  transition: all 0.5s;
+  transform: skewX(-20deg);
+  transform-origin: 0 0;
+  z-index: -1;
+}
+main section#business .wrap article a.more:hover::after{
+  width: 120%;
+}
+main section#business .wrap article a.more:hover{
+  color: black;
+  background-color: white;
+  border-color: white;
+}
+main section#business .wrap article:nth-of-type(1)::after{
+ content: "";
+ width: 675px;
+ height: 834px;
+ display: block;
+ background-image: url(../img/busi1.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: absolute;
+ top: -270px;
+ left: 36%;
+ z-index: 2;
+}
+main section#business .wrap article:nth-of-type(2)::before{
+ content: "";
+ width: 580px;
+ height: 800px;
+ display: block;
+ background-image: url(../img/busi2.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: absolute;
+ left: 0;
+ top: -95px;
+ z-index: 3;
+}
+main section#business .wrap article:nth-of-type(2)::after{
+  content: "";
+  
+  width: 955px;
+  height: 1185px;
+  display: block;
+  background-image: url(../img/busi3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: -304px;
+  top: -75%;
+}

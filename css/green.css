@@ -1,0 +1,96 @@
+#green {
+
+}
+.current{
+  border: 1px solid;
+  border-color: red;
+}
+#green .wrap {
+
+  max-width: 1200px;
+}
+#green .wrap h2.h3 {
+  margin-bottom: 80px;
+}
+#green .wrap ul.flex {
+
+  gap: 20px;
+}
+#green .wrap ul.flex li{
+   width: calc( 100% / 3 );
+   line-height: 1.6;
+}
+#green .wrap ul.flex li::before{
+  content: "";
+  width: 100%;
+  height: 438px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#green .wrap ul.flex li:nth-of-type(1)::before{
+  background-image: url(../img/green1.jpg);
+}
+#green .wrap ul.flex li:nth-of-type(2)::before{
+  background-image: url(../img/green2.jpg);
+}
+#green .wrap ul.flex li:nth-of-type(3)::before{
+  background-image: url(../img/green3.jpg);
+}
+#green .wrap ul.flex li h3.h4 {
+  line-height: 3;
+  transform: translateY(3px);
+}
+#green .wrap ul.flex li p.p {
+
+}
+#green .wrap a.siteview {
+
+  padding: 15px 20px;
+  width: 180px;
+  border: 1px solid;
+  box-sizing: border-box;
+  margin-left: calc( 100% / 3 * 2 + 15px);
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#green .wrap a.siteview:hover{
+color: white;
+background-color: black;
+}
+#green .wrap a.siteview::before{
+content: "";
+width: 0;
+height: 100%;
+display: block;
+position: absolute;
+top: 0;
+background-color: black;
+left: 0;
+transition: all 0.5s;
+transform: skewX(-20deg);
+transform-origin: 0 0;
+z-index: -1;
+}
+#green .wrap a.siteview:hover::before{
+  width: 120%;
+}
+#green .wrap a.siteview::after{
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-image: url(../img/siteview.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+#green .wrap a.siteview:hover::after{
+  content: "";
+  background-image: url(../img/siteview2.svg);
+}

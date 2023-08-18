@@ -1,0 +1,45 @@
+section#about {
+  
+}
+section#about div.wrap {
+  
+  background-color: #F8F8F8;
+  padding-bottom: 300px;
+}
+section#about div.wrap h2.h3 {
+  
+}
+section#about div.wrap ul.flex { 
+  margin: 0 auto;
+  max-width: 1200px;
+}
+section#about div.wrap ul.flex li{
+  
+  width: calc( 100% / 3 );
+  line-height: 1.8;
+}
+section#about div.wrap ul.flex li:nth-of-type(2){  
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: #DFDFDF;
+}
+section#about div.wrap ul.flex li svg path{
+  transition: all 1s;
+}
+section#about div.wrap ul.flex li:hover svg path{
+  stroke: white;
+  stroke-width: 5;
+}
+section#about div.wrap ul.flex li figure{
+  
+}
+section#about div.wrap ul.flex li figure svg{
+  
+}
+section#about div.wrap ul.flex li h3.h4 {
+  
+  line-height: 3;
+}
+section#about div.wrap ul.flex li p.p {
+  
+}
