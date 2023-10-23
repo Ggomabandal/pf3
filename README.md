@@ -4,7 +4,7 @@
 ## 원본 웹사이트
 <img src="https://github.com/Ggomabandal/pf3/assets/142555219/33f5461a-f8e1-40bd-a1e3-c9b5159a2c81.png" width="400" height="200"/>
 
-원본 url: https://www.samsung.com/sec/
+원본 url: https://www.ka.co.kr/
 
 ## 클론 웹사이트 스크린 샷 링크
 클론코딩페이지 url : https://ggomabandal.github.io/pf3/
