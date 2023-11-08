@@ -1,0 +1,122 @@
+#subtitle{ 
+    background-image: url(../img/company-about-title.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 490px;
+    height: calc( 100% + 66px );
+  }
+  #subtitle .wrap{
+    color: white;
+    position: relative;
+    row-gap: 30px;
+  }
+  #subtitle .wrap hgroup{
+    
+  line-height: 1.5;
+  position: relative;
+  }
+#subtitle .wrap hgroup::after{
+  content: "";
+  width: 40px;
+  display: block;
+  border: 1px solid;
+  position: absolute;
+  left: calc(50% - 20px);
+  bottom: -10px;
+}
+  #subtitle .wrap hgroup .h4{
+    
+  font-size: 40px;
+  }
+  #subtitle .wrap hgroup .h1{
+    
+  font-weight: 300;
+  font-size: 65px;
+  }
+  #subtitle .wrap p{
+    
+  text-align: center;
+  line-height: 1.5;
+  font-size: 17px;
+  }
+  #subtitle .wrap .scroll{
+    color: white;
+    position: absolute;
+    bottom: 100px;
+    width: 80px;
+    height: 80px;
+    font-size: 0;
+  }
+  #subtitle .wrap .scroll:after{
+    content: "";
+    background-image: url(../img/scroll.svg);
+    width: 80px;
+    height: 80px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name:updown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+  }
+  @keyframes updown{
+    0%{ /* 시작 */
+      transform: translateY(10px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    100%{ /* 끝 */
+      transform: translateY(-10px);
+    }
+  }
+  #subtitle .wrap .scroll span{
+    width: 2px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    background-color: white;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  #subtitle .wrap .scroll span:nth-child(1){
+    left: 0;
+    top: 0;
+    animation-name: one;
+    width: 0;
+  }
+  @keyframes one{
+    100%{ /* 시작 */
+      width: 100%;
+    }
+  }
+  #subtitle .wrap .scroll span:nth-child(2){
+    right: 0;
+    top: 0;
+    animation-name: two;
+    animation-delay: 0.5s;
+    height: 0;
+  }
+  @keyframes two{
+    100%{ /* 시작 */
+      height: 100%;
+    }
+  }
+  #subtitle .wrap .scroll span:nth-child(3){
+    right: 0;
+    bottom: 0;
+    animation-name: one;
+    animation-delay: 1s;
+    width: 0;
+  }
+  #subtitle .wrap .scroll span:nth-child(4){
+    left: 0;
+    bottom: 0;
+    animation-name: two;
+    animation-delay: 1.5s;
+    height: 0;
+  }
+  
+  
+  

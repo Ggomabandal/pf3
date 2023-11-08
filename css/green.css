@@ -16,9 +16,13 @@
 
   gap: 20px;
 }
-#green .wrap ul.flex li{
+.wrap ul.flex li{
    width: calc( 100% / 3 );
    line-height: 1.6;
+}
+.wrap ul.flex li:nth-child(2){
+  position: relative;
+  z-index: 1;
 }
 #green .wrap ul.flex li::before{
   content: "";
